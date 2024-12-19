@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to bottom, #734C29 -70%, #A67246);
+    background-attachment: fixed;
+    margin: 0; /* Remove margens padrão */
+    font-family: Arial, sans-serif;
+    color: #402813; /* Definindo cor padrão do texto */
+}
+
+/* Centraliza o conteúdo dentro de main */
+main {
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%; /* Ajusta para 80% da largura da tela */
+    max-width: 800px; /* Limita a largura máxima para 800px */
+    margin: 100px auto; /* Centraliza o main na tela com margem superior */
+    background-color: white;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.322); /* Adiciona sombra sutil */
+}
+
+/* Estilo para o título principal */
+h1 {
+    text-align: center;
+    color: #F2CEA2;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os subtítulos */
+h2 {
+    color: #F2CEA2;
+    margin-top: 20px;
+}
+
+/* Estilo para os parágrafos */
+p {
+    text-align: justify;
+    margin-bottom: 20px; /* Espaço entre parágrafos */
+}
+
+/* Estilo para marcar palavras */
+mark {
+    background-color: #F2CEA2; /* Cor do fundo do texto marcado */
+    color: #402813; /* Cor do texto */
+}
+
+/* Estilo para o <abbr> com a dica ao passar o mouse */
+abbr {
+    text-decoration: none;
+    border-bottom: 1px dashed #F2CEA2;
+    cursor: pointer;
+}
+
+abbr:hover {
+    color: #734C29; /* Cor do texto quando passar o mouse */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 400px) {
+    main {
+        width: 90%; /* Ajusta o main para 90% da largura em telas pequenas */
+    }
+}
+
+/* Estilo para o container do vídeo */
+.video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Estilo para o iframe */
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Ajuste para desabilitar os controles de interação */
+.video iframe[style*="pointer-events: none"] {
+    pointer-events: none;
+}
+
+header {
+    background-color: #734C29;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    
+}
+
+/* Centraliza o menu de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;    /* Centraliza verticalmente */
+    margin-right: 800px;
+}
+
+nav ul li {
+    margin: 0 15px;  /* Espaçamento horizontal entre itens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F2CEA2;
+}
+
+
+.imagembola{
+    width: 50px;
+    height:50px;
+
+}
+
+@media (max-width: 400px) {
+    div.imagembola {
+        width: 30%; /* Ajusta o main para 90% da largura em telas pequenas */
+    }
+}
+
+
+table{ padding: 30px;
+    border-radius: 10px;
+    width: 80%; /* Ajusta para 80% da largura da tela */
+    max-width: 800px; /* Limita a largura máxima para 800px */
+    margin: 100px auto; /* Centraliza o main na tela com margem superior */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.322); /* Adiciona sombra sutil */
+
+}
+
+.text2{
+    text-align: center;
+}

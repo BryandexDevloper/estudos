@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="google.css">
+</head>
+<body onmousemove="moveLine(event)">
+
+    <abbr title="Festas de fim de ano 2024">
+        <div class="logo1">
+            <img src="https://www.google.com.br/logos/doodles/2024/seasonal-holidays-2024-6753651837110333.2-la202124.gif" alt="logo google">
+        </div>
+    </abbr>
+    
+    <abbr title="Pesquisar" style="text-decoration: none;">
+        <input class="imput" type="search" id="search" name="q" placeholder="Pesquisar...">
+    </abbr>
+    
+    <div class="botao">
+        <button>Pesquisar Google</button>
+        <button>Estou com sorte</button>
+    </div>
+    
+    <div class="tracking-line" id="trackingLine"></div>
+    
+    <script>
+    function moveLine(event) {
+        const line = document.getElementById('trackingLine');
+        line.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+    }
+    </script>
+    
+    </body>
+</html>

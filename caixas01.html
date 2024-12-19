@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixas</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .containerpai {
+            border: 5px solid red;
+            width: 640px;
+            height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .containerfilhos {
+            border: 5px solid black;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .neto {
+            border: 2px solid green;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .containerfilhos span, .neto span {
+            font-size: 12px;
+        }
+
+.neto span{
+    font-size: 10px;
+    
+}
+
+        
+    </style>
+</head>
+<body>
+
+<div class="containerpai"> <span>pai</span>
+    <div class="containerfilhos"> <span>filho</span>
+        <div class="neto"><span>neto</span></div> 
+    </div>
+
+    <div class="containerfilhos"> <span>filho</span>
+        <div class="neto"><span>neto</span></div>
+    </div>
+
+    <div class="containerfilhos"> <span>filho</span>
+        <div class="neto"><span>neto</span></div>
+    </div>
+
+    <div class="containerfilhos"> <span>filho</span>
+        <div class="neto"><span>neto</span></div>
+    </div>
+</div>
+
+</body>
+</html>

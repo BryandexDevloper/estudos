@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+
+header{
+    width: 100%p;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+
+
+.esquerda,.centro,.direita{
+
+
+flex:1;
+justify-content: center;
+align-items: center;
+display: flex;
+text-align: center;
+
+}
+
+
+.esquerda img{
+    width: 50px;
+    height:50px;
+
+}
+
+
+
+.centro{
+    color: white;
+    font-size: 16px;
+}
+
+
+ header li{
+    color: white;
+    display: inline;
+    margin-left: 5px;
+    background-color: cadetblue;
+    padding: 10px;
+    
+}
+
+ul{
+
+font-size: 20px;
+padding: 0;
+display: flex;
+}
+
+
+main{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+#section1{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.a .b .c{
+    border: 2px solid red;
+    flex: 1,2,3;
+    height: 700px;
+    max-width: 700px;
+    justify-content: center;
+    align-items: center;
+    
+
+
+
+}
+
+.navpesquisa{
+    border: 2px solid red;
+    height: 50px;
+    margin-bottom:10px;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(133, 133, 133, 0.616);
+}
+
+
+
+
+
+
+#section2{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px 10px 10px;
+}
+
+.navpesquisa ul li {
+
+    display: inline;
+    margin-left: 20px;
+   
+   
+    
+    
+}
+
+
+.navpesquisa ul{
+
+    background-color: aliceblue;
+    padding: 13px;
+    display: flex;
+}
+
+
+
+.quadrado{
+    
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+   
+}
+
+
+.b .quadrado h1:hover{
+    color: red;
+}
+
+
+.s1 {
+    
+    flex: 1;
+    height: 700px;
+    max-width: 700px;
+   
+    justify-content: center;
+    display: flex;
+    
+}
+
+
+.s2{
+   
+    flex: 1;
+    height: 700px;
+    max-width: 700px;
+    justify-content: center;
+    
+    display: flex;
+}
+
+
+.s3{
+    
+    flex: 1;
+    height: 700px;
+    max-width: 700px;
+    justify-content: center;
+    
+    display: flex;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="esquerda"><img src="DALL·E 2024-12-13 19.00.46 - A simple and clean logo design featuring geometric shapes, minimalistic style, with modern colors such as blue and white, and a professional look suit.webp" alt=""></div>
+        <div class="centro"><h1>SEU HEADER</h1></div>
+        <div class="direita"><ul>
+            <li>Menu</li>
+            <li>Perfil</li>
+            <li>Conta</li>
+        </ul></div>
+    </header>
+    <div class="navpesquisa">
+        <ul>
+            <li>Downloads</li>
+            <li>Lives</li>
+            <li>Livros</li>
+            <li>Economia</li>
+            <li>Geopolitica</li>
+        </ul>
+    </div>
+    <main>
+
+<section id="section1">
+    <div class="a">div1</div>
+    <div class="b"><div class="quadrado"><h1>Titutulo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus hic expedita architecto quasi dicta, harum modi aliquid reprehenderit libero nihil cum magnam repudiandae accusantium aspernatur quas beatae vel odio? Deleniti!</p>
+        </div></div> 
+    <div class="c">div3</div>
+</section>
+<hr>
+<section id="section2">
+    <div class="s1"><div class="quadrado"><h1>Titutulo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus hic expedita architecto quasi dicta, harum modi aliquid reprehenderit libero nihil cum magnam repudiandae accusantium aspernatur quas beatae vel odio? Deleniti!</p>
+        </div></div>
+    <div class="s2"><div class="quadrado"><h1>Titutulo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus hic expedita architecto quasi dicta, harum modi aliquid reprehenderit libero nihil cum magnam repudiandae accusantium aspernatur quas beatae vel odio? Deleniti!</p>
+        </div></div>
+    <div class="s3"><div class="quadrado"><h1>Titutulo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus hic expedita architecto quasi dicta, harum modi aliquid reprehenderit libero nihil cum magnam repudiandae accusantium aspernatur quas beatae vel odio? Deleniti!</p>
+        </div></div>
+</section>
+    <section>
+        <hr>
+    </section>
+
+    </main>
+    
+    <footer>Desenvolvido por Bryan</footer>
+</body>
+</html>

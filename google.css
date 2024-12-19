@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    background-color: #202124;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.imput {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 600px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #4D5156;
+    transition: border-color 0.3s ease;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #ccc;
+}
+
+.imput:hover {
+    border-color: #ffffff;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #303134;
+    color: #ffffff;
+    border: 1px solid #303134;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+button:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.tracking-line {
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background: linear-gradient(90deg, rgb(0, 0, 0), yellow, green, cyan, blue, magenta);
+    pointer-events: none;
+    border-radius: 2px;
+    transition: transform 0.2s ease;
+}

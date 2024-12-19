@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eBook</title>
+    <link rel="stylesheet" href="treino.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="imagens/logo.png" alt="Logo Fé em Deus">
+        </a>
+        <h1>Fé em Deus</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home"><img src="imagens/home.png" alt="Início"></a></li>
+            <li><a href="#sobre"><img src="imagens/script.png" alt="Script"></a></li>
+            <li><a href="#contato"><img src="imagens/cafe.png" alt="Café"></a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="imagembola" style="width: 100px; height: 100px; position: absolute; top: 20px; right: 20px;">
+    <img src="imagens/bola.png" alt="Imagem Bola" style="width: 100%; height: 100%; object-fit: cover;">
+</div>
+
+<main>
+    <h1>Treinando o que foi aprendido</h1>
+    <h2>Treinando</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur <mark>adipisicing elit</mark>. Doloremque harum ad nisi vitae consequatur unde, quidem nostrum?</p>
+
+    <h2>Treinando</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <abbr title="Explicação de termos">Explicação de termos</abbr> quaerat ab molestiae amet dolores provident expedita.</p>
+
+    <h2>Treinando</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae incidunt officia velit perspiciatis.</p>
+</main>
+
+<main>
+    <div class="video">
+        <iframe src="https://player.vimeo.com/video/872966922?autoplay=1&controls=0&autopause=0&muted=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Video"></iframe>
+    </div>
+</main>
+
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var iframe = document.querySelector('iframe');
+        var player = new Vimeo.Player(iframe);
+        player.setVolume(1);  // Volume máximo
+
+        player.on('play', function() {
+            setTimeout(function() {
+                iframe.style.pointerEvents = 'none';
+            }, 3000); 
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ebook</title>
+    <link rel="stylesheet" href="treino.css">
+    
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <!-- Aqui você pode adicionar uma imagem para o logo -->
+            <a href="index.html">
+                <img src="imagens/pngtree-star-christmas-cookies-gingerbread-chocolate-chip-cookies-png-image_5320157-removebg-preview.png" alt="Logo Fe em Deus">
+            </a>
+            <h1>Fe em Deus</h1>
+        </div>
+        <nav>
+            <ul>
+                <div class="logo">
+                    
+                    <li><a href="view-source:https://player.vimeo.com/video/872966922?autoplay=1&controls=0&autopause=0&muted=1">
+                    <img src="imagens/homepage.png"alt="logoinicio">
+                    </a></li>
+                
+                <li><a href="#sobre"></a>
+                <img src="imagens/script.png"alt="logoscript">
+                </li>
+
+                <li><a href="#contato"></a>
+                <img src="imagens/OIP__1_-removebg-preview.png"alt="logocafe">
+                </li>
+
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        
+        <h1>Treinando o que foi aprendido</h1>
+        <h2>Treinando</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, <mark>adipisicing elit</mark>. Doloremque harum aut ad nisi vitae consequatur amet unde, quidem nostrum? Dolor quaerat ab molestiae amet dolores provident expedita saepe modi atque!</p>
+        <h2>Treinando</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. D<mark><abbr title="Abbr e mark">oloribus aut quasi vero labore tempora voluptas voluptates aliquid</abbr></mark>, iusto perspiciatis explicabo omnis ducimus. Consequatur explicabo quibusdam ullam quas accusantium asperiores sint.</p>
+        <h2>Treinando</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae incidunt officia velit perspiciatis. Minus quaerat, quos recusandae libero debitis nihil! Officia optio minima provident praesentium consequatur et molestias porro fugiat.</p>
+    </main>
+
+    <main>
+        <div class="video">
+            <iframe src="https://player.vimeo.com/video/872966922?autoplay=1&controls=0&autopause=0&muted=1"
+                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                    title="ThxSoMch - SPIT IN MY FACE! (Official Music Video)">
+            </iframe>
+        </div>
+    </main>
+    
+    <!-- Carrega a API do Vimeo -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var iframe = document.querySelector('iframe');
+            var player = new Vimeo.Player(iframe);
+
+            // Define o volume para 1 (máximo) quando o vídeo começar a tocar
+            player.setVolume(1);  // Garante que o áudio esteja no máximo (1)
+
+            player.on('play', function() {
+                setTimeout(function() {
+                    iframe.style.pointerEvents = 'none';  // Desabilita os controles do mouse
+                }, 3000); // Ação após 3 segundos
+            });
+        });
+    </script>
+
+<main> 
+     <div class="text2">
+            <!-- Tabela de Propriedades CSS: Texto -->
+            <h2>Propriedades CSS: Texto</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Propriedade</th>
+                        <th>Função</th>
+                        <th>Tradução</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>color</code></td>
+                        <td>Define a cor do texto</td>
+                        <td>Cor</td>
+                    </tr>
+                    <tr>
+                        <td><code>font-size</code></td>
+                        <td>Tamanho da fonte</td>
+                        <td>Tamanho da fonte</td>
+                    </tr>
+                    <tr>
+                        <td><code>font-family</code></td>
+                        <td>Tipo de fonte (Arial, Verdana)</td>
+                        <td>Família da fonte</td>
+                    </tr>
+                    <tr>
+                        <td><code>font-style</code></td>
+                        <td>Faz o texto ser <em>itálico</em></td>
+                        <td>Estilo da fonte</td>
+                    </tr>
+                    <tr>
+                        <td><code>font-weight</code></td>
+                        <td>Define a espessura (negrito)</td>
+                        <td>Peso da fonte</td>
+                    </tr>
+                    <tr>
+                        <td><code>letter-spacing</code></td>
+                        <td>Espaço entre letras</td>
+                        <td>Espaçamento das letras</td>
+                    </tr>
+                    <tr>
+                        <td><code>line-height</code></td>
+                        <td>Altura da linha do texto</td>
+                        <td>Altura da linha</td>
+                    </tr>
+                    <tr>
+                        <td><code>text-align</code></td>
+                        <td>Alinha o texto (esquerda, centro)</td>
+                        <td>Alinhamento do texto</td>
+                    </tr>
+                    <tr>
+                        <td><code>text-decoration</code></td>
+                        <td>Sublinhado, tachado, nenhum</td>
+                        <td>Decoração do texto</td>
+                    </tr>
+                    <tr>
+                        <td><code>text-transform</code></td>
+                        <td>Maiúsculas, minúsculas, capitalizado</td>
+                        <td>Transformação de texto</td>
+                    </tr>
+                    <tr>
+                        <td><code>white-space</code></td>
+                        <td>Controla espaços e quebras de linha</td>
+                        <td>Espaçamento de texto</td>
+                    </tr>
+                    <tr>
+                        <td><code>word-spacing</code></td>
+                        <td>Define o espaço entre palavras</td>
+                        <td>Espaçamento das palavras</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <!-- Tabela de Propriedades CSS: Cores e Fundo -->
+            <h2>Propriedades CSS: Cores e Fundo</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Propriedade</th>
+                        <th>Função</th>
+                        <th>Tradução</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>background-color</code></td>
+                        <td>Cor de fundo</td>
+                        <td>Cor de fundo</td>
+                    </tr>
+                    <tr>
+                        <td><code>background-image</code></td>
+                        <td>Imagem de fundo</td>
+                        <td>Imagem de fundo</td>
+                    </tr>
+                    <tr>
+                        <td><code>background-position</code></td>
+                        <td>Posição da imagem</td>
+                        <td>Posição do fundo</td>
+                    </tr>
+                    <tr>
+                        <td><code>background-size</code></td>
+                        <td>Tamanho da imagem</td>
+                        <td>Tamanho do fundo</td>
+                    </tr>
+                    <tr>
+                        <td><code>background-repeat</code></td>
+                        <td>Define se a imagem repete ou não</td>
+                        <td>Repetição do fundo</td>
+                    </tr>
+                    <tr>
+                        <td><code>opacity</code></td>
+                        <td>Transparência (0 a 1)</td>
+                        <td>Opacidade</td>
+                    </tr>
+                    <tr>
+                        <td><code>box-shadow</code></td>
+                        <td>Sombra em torno do elemento</td>
+                        <td>Sombra da caixa</td>
+                    </tr>
+                    <tr>
+                        <td><code>color</code></td>
+                        <td>Cor do texto</td>
+                        <td>Cor</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <!-- Tabela de Propriedades CSS: Bordas e Espaçamento -->
+            <h2>Propriedades CSS: Bordas e Espaçamento</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Propriedade</th>
+                        <th>Função</th>
+                        <th>Tradução</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>border</code></td>
+                        <td>Borda completa (largura, tipo, cor)</td>
+                        <td>Borda</td>
+                    </tr>
+                    <tr>
+                        <td><code>border-width</code></td>
+                        <td>Largura da borda</td>
+                        <td>Largura da borda</td>
+                    </tr>
+                    <tr>
+                        <td><code>border-style</code></td>
+                        <td>Tipo de borda (sólida, pontilhada)</td>
+                        <td>Estilo da borda</td>
+                    </tr>
+                    <tr>
+                        <td><code>border-color</code></td>
+                        <td>Cor da borda</td>
+                        <td>Cor da borda</td>
+                    </tr>
+                    <tr>
+                        <td><code>border-radius</code></td>
+                        <td>Arredonda os cantos</td>
+                        <td>Raio da borda</td>
+                    </tr>
+                    <tr>
+                        <td><code>margin</code></td>
+                        <td>Espaço externo ao redor do elemento</td>
+                        <td>Margem</td>
+                    </tr>
+                    <tr>
+                        <td><code>padding</code></td>
+                        <td>Espaço interno do elemento</td>
+                        <td>Preenchimento</td>
+                    </tr>
+                    <tr>
+                        <td><code>outline</code></td>
+                        <td>Contorno do elemento</td>
+                        <td>Contorno</td>
+                    </tr>
+                    <tr>
+                        <td><code>outline-color</code></td>
+                        <td>Cor do contorno</td>
+                        <td>Cor do contorno</td>
+                    </tr>
+                    <tr>
+                        <td><code>outline-style</code></td>
+                        <td>Estilo do contorno</td>
+                        <td>Estilo do contorno</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <!-- Tabela de Propriedades CSS: Posicionamento e Tamanhos -->
+            <h2>Propriedades CSS: Posicionamento e Tamanhos</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Propriedade</th>
+                        <th>Função</th>
+                        <th>Tradução</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>width</code></td>
+                        <td>Largura do elemento</td>
+                        <td>Largura</td>
+                    </tr>
+                    <tr>
+                        <td><code>height</code></td>
+                        <td>Altura do elemento</td>
+                        <td>Altura</td>
+                    </tr>
+                    <tr>
+                        <td><code>max-width</code></td>
+                        <td>Largura máxima permitida</td>
+                        <td>Largura máxima</td>
+                    </tr>
+                    <tr>
+                        <td><code>max-height</code></td>
+                        <td>Altura máxima permitida</td>
+                        <td>Altura máxima</td>
+                    </tr>
+                    <tr>
+                        <td><code>min-width</code></td>
+                        <td>Largura mínima permitida</td>
+                        <td>Largura mínima</td>
+                    </tr>
+                    <tr>
+                        <td><code>min-height</code></td>
+                        <td>Altura mínima permitida</td>
+                        <td>Altura mínima</td>
+                    </tr>
+                    <tr>
+                        <td><code>position</code></td>
+                        <td>Define a posição (absoluta, relativa)</td>
+                        <td>Posição</td>
+                    </tr>
+                    <tr>
+                        <td><code>top</code></td>
+                        <td>Define a distância do topo</td>
+                        <td>Topo</td>
+                    </tr>
+                    <tr>
+                        <td><code>left</code></td>
+                        <td>Define a distância da esquerda</td>
+                        <td>Esquerda</td>
+                    </tr>
+                    <tr>
+                        <td><code>right</code></td>
+                        <td>Define a distância da direita</td>
+                        <td>Direita</td>
+                    </tr>
+                    <tr>
+                        <td><code>bottom</code></td>
+                        <td>Define a distância da parte inferior</td>
+                        <td>Inferior</td>
+                    </tr>
+                    <tr>
+                        <td><code>z-index</code></td>
+                        <td>Camada do elemento (superior/inferior)</td>
+                        <td>Índice Z</td>
+                    </tr>
+                    <tr>
+                        <td><code>display</code></td>
+                        <td>Define como o elemento é exibido</td>
+                        <td>Exibição</td>
+                    </tr>
+                    <tr>
+                        <td><code>visibility</code></td>
+                        <td>Mostra ou esconde o elemento</td>
+                        <td>Visibilidade</td>
+                    </tr>
+                    <tr>
+                        <td><code>overflow</code></td>
+                        <td>Define como lidar com conteúdo extra</td>
+                        <td>Transbordamento</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <!-- Tabela de Propriedades CSS: Flexbox (Layout Responsivo) -->
+            <h2>Propriedades CSS: Flexbox (Layout Responsivo)</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Propriedade</th>
+                        <th>Função</th>
+                        <th>Tradução</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>display: flex</code></td>
+                        <td>Ativa o Flexbox</td>
+                        <td>Exibir como flexível</td>
+                    </tr>
+                    <tr>
+                        <td><code>flex-direction</code></td>
+                        <td>Direção dos elementos (linha ou coluna)</td>
+                        <td>Direção do flexível</td>
+                    </tr>
+                    <tr>
+                        <td><code>justify-content</code></td>
+                        <td>Alinhamento horizontal (esquerda, centro)</td>
+                        <td>Justificar conteúdo</td>
+                    </tr>
+                    <tr>
+                        <td><code>align-items</code></td>
+                        <td>Alinhamento vertical dos itens</td>
+                        <td>Alinhar itens</td>
+                    </tr>
+                    <tr>
+                        <td><code>flex-wrap</code></td>
+                        <td>Quebra linha quando falta espaço</td>
+                        <td>Quebra de linha flex</td>
+                    </tr>
+                    <tr>
+                        <td><code>align-self</code></td>
+                        <td>Alinhamento de um item específico</td>
+                        <td>Alinhar item específico</td>
+                    </tr>
+                    <tr>
+                        <td><code>gap</code></td>
+                        <td>Espaço entre itens flexíveis</td>
+                        <td>Espaçamento</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <!-- Tabela de Propriedades CSS: Animações e Efeitos -->
+            <h2>Propriedades CSS: Animações e Efeitos</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Propriedade</th>
+                        <th>Função</th>
+                        <th>Tradução</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>animation</code></td>
+                        <td>Define uma animação completa</td>
+                        <td>Animação</td>
+                    </tr>
+                    <tr>
+                        <td><code>animation-name</code></td>
+                        <td>Nome da animação</td>
+                        <td>Nome da animação</td>
+                    </tr>
+                    <tr>
+                        <td><code>animation-duration</code></td>
+                        <td>Duração da animação</td>
+                        <td>Duração da animação</td>
+                    </tr>
+                    <tr>
+                        <td><code>animation-timing-function</code></td>
+                        <td>Tipo de transição</td>
+                        <td>Função de tempo</td>
+                    </tr>
+                    <tr>
+                        <td><code>transform</code></td>
+                        <td>Transforma o elemento (girar, mover)</td>
+                        <td>Transformar</td>
+                    </tr>
+                    <tr>
+                        <td><code>transition</code></td>
+                        <td>Define transição suave</td>
+                        <td>Transição</td>
+                    </tr>
+                    <tr>
+                        <td><code>cursor</code></td>
+                        <td>Define o tipo de cursor</td>
+                        <td>Cursor</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+    
+</div>
+</main>
+
+<main>
+    <div class="text2">
+        <h1>Lista Completa de Propriedades CSS</h1>
+
+    <h2>1. Propriedades de Texto</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Propriedade</th>
+                <th>Função</th>
+                <th>Exemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>color</code></td>
+                <td>Define a cor do texto</td>
+                <td>
+                    <code>color: red;</code><br>Define a cor do texto como vermelha.
+                </td>
+            </tr>
+            <tr>
+                <td><code>font-size</code></td>
+                <td>Tamanho da fonte</td>
+                <td>
+                    <code>font-size: 16px;</code><br>Define o tamanho da fonte como 16px.
+                </td>
+            </tr>
+            <tr>
+                <td><code>font-family</code></td>
+                <td>Tipo de fonte (Arial, Verdana)</td>
+                <td>
+                    <code>font-family: Arial, sans-serif;</code><br>Define a fonte como Arial, com fallback para sans-serif.
+                </td>
+            </tr>
+            <tr>
+                <td><code>font-style</code></td>
+                <td>Faz o texto ser <em>itálico</em></td>
+                <td>
+                    <code>font-style: italic;</code><br>Aplica itálico ao texto.
+                </td>
+            </tr>
+            <tr>
+                <td><code>font-weight</code></td>
+                <td>Define a espessura (negrito)</td>
+                <td>
+                    <code>font-weight: bold;</code><br>Aplica negrito ao texto.
+                </td>
+            </tr>
+            <tr>
+                <td><code>letter-spacing</code></td>
+                <td>Espaço entre letras</td>
+                <td>
+                    <code>letter-spacing: 2px;</code><br>Define o espaçamento entre as letras como 2px.
+                </td>
+            </tr>
+            <tr>
+                <td><code>line-height</code></td>
+                <td>Altura da linha do texto</td>
+                <td>
+                    <code>line-height: 1.5;</code><br>Define a altura da linha como 1.5 vezes o tamanho da fonte.
+                </td>
+            </tr>
+            <tr>
+                <td><code>text-align</code></td>
+                <td>Alinha o texto (esquerda, centro)</td>
+                <td>
+                    <code>text-align: center;</code><br>Centraliza o texto.
+                </td>
+            </tr>
+            <tr>
+                <td><code>text-decoration</code></td>
+                <td>Sublinhado, tachado, nenhum</td>
+                <td>
+                    <code>text-decoration: underline;</code><br>Aplica sublinhado ao texto.
+                </td>
+            </tr>
+            <tr>
+                <td><code>text-transform</code></td>
+                <td>Maiúsculas, minúsculas, capitalizado</td>
+                <td>
+                    <code>text-transform: uppercase;</code><br>Transforma o texto em maiúsculas.
+                </td>
+            </tr>
+            <tr>
+                <td><code>white-space</code></td>
+                <td>Controla espaços e quebras de linha</td>
+                <td>
+                    <code>white-space: nowrap;</code><br>Impede que o texto quebre a linha.
+                </td>
+            </tr>
+            <tr>
+                <td><code>word-spacing</code></td>
+                <td>Define o espaço entre palavras</td>
+                <td>
+                    <code>word-spacing: 5px;</code><br>Define o espaçamento entre as palavras como 5px.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>2. Cores e Fundo</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Propriedade</th>
+                <th>Função</th>
+                <th>Exemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>background-color</code></td>
+                <td>Cor de fundo</td>
+                <td>
+                    <code>background-color: #f0f0f0;</code><br>Define a cor de fundo como cinza claro.
+                </td>
+            </tr>
+            <tr>
+                <td><code>background-image</code></td>
+                <td>Imagem de fundo</td>
+                <td>
+                    <code>background-image: url('imagem.jpg');</code><br>Define uma imagem como fundo do elemento.
+                </td>
+            </tr>
+            <tr>
+                <td><code>background-position</code></td>
+                <td>Posição da imagem</td>
+                <td>
+                    <code>background-position: center;</code><br>Posiciona a imagem de fundo no centro.
+                </td>
+            </tr>
+            <tr>
+                <td><code>background-size</code></td>
+                <td>Tamanho da imagem</td>
+                <td>
+                    <code>background-size: cover;</code><br>Faz a imagem de fundo cobrir todo o elemento.
+                </td>
+            </tr>
+            <tr>
+                <td><code>background-repeat</code></td>
+                <td>Define se a imagem repete ou não</td>
+                <td>
+                    <code>background-repeat: no-repeat;</code><br>Não repete a imagem de fundo.
+                </td>
+            </tr>
+            <tr>
+                <td><code>opacity</code></td>
+                <td>Transparência (0 a 1)</td>
+                <td>
+                    <code>opacity: 0.5;</code><br>Define a opacidade do elemento como 50%.
+                </td>
+            </tr>
+            <tr>
+                <td><code>box-shadow</code></td>
+                <td>Sombra em torno do elemento</td>
+                <td>
+                    <code>box-shadow: 2px 2px 5px #888888;</code><br>Cria uma sombra com 2px de desvio, 5px de desfoque e cor cinza.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Bordas e Espaçamento</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Propriedade</th>
+                <th>Função</th>
+                <th>Exemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>border</code></td>
+                <td>Borda completa (largura, tipo, cor)</td>
+                <td>
+                    <code>border: 1px solid #000;</code><br>Adiciona uma borda de 1px sólida preta.
+                </td>
+            </tr>
+            <tr>
+                <td><code>border-radius</code></td>
+                <td>Arredonda os cantos</td>
+                <td>
+                    <code>border-radius: 10px;</code><br>Arredonda os cantos com 10px de raio.
+                </td>
+            </tr>
+            <tr>
+                <td><code>margin</code></td>
+                <td>Espaço externo ao redor do elemento</td>
+                <td>
+                    <code>margin: 10px;</code><br>Adiciona 10px de espaço em todos os lados.
+                </td>
+            </tr>
+            <tr>
+                <td><code>padding</code></td>
+                <td>Espaço interno dentro do elemento</td>
+                <td>
+                    <code>padding: 10px;</code><br>Adiciona 10px de espaço dentro de todos os lados.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Posicionamento e Tamanhos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Propriedade</th>
+                <th>Função</th>
+                <th>Exemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>width</code></td>
+                <td>Largura do elemento</td>
+                <td>
+                    <code>width: 300px;</code><br>Define a largura do elemento como 300px.
+                </td>
+            </tr>
+            <tr>
+                <td><code>height</code></td>
+                <td>Altura do elemento</td>
+                <td>
+                    <code>height: 200px;</code><br>Define a altura do elemento como 200px.
+                </td>
+            </tr>
+            <tr>
+                <td><code>position</code></td>
+                <td>Define a posição do elemento</td>
+                <td>
+                    <code>position: relative;</code><br>Define a posição do elemento como relativa.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>5. Flexbox (Layout Responsivo)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Propriedade</th>
+                <th>Função</th>
+                <th>Exemplo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>display: flex</code></td>
+                <td>Ativa o Flexbox</td>
+                <td>
+                    <code>display: flex;</code><br>Ativa o layout Flexbox para o elemento.
+                </td>
+            </tr>
+            <tr>
+                <td><code>justify-content</code></td>
+                <td>Alinhamento horizontal</td>
+                <td>
+                    <code>justify-content: center;</code><br>Alinha os itens no centro horizontalmente.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    </div>
+</main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Interativos</title>
+    <style>
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+    color: blue;
+    font-weight: bold;
+}
+.hidden:hover{
+    color: black;
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+.hidden::before{
+    content: "😊";
+}
+    </style>
+</head>
+<body>
+    
+<h1>Personalizando Links</h1>
+
+<ul>
+    <li><a href="#" onclick="mostrarTexto('msg1')">GitHub</a></li>
+    <li><a href="#" onclick="mostrarTexto('msg2')">Canal do YouTube</a></li>
+    <li><a href="#" onclick="mostrarTexto('msg3')">Site em Vídeo</a></li>
+</ul>
+
+<!-- Mensagens escondidas -->
+<p id="msg1" class="hidden">Você clicou no GitHub!</p>
+<p id="msg2" class="hidden">Você clicou no Canal do YouTube!</p>
+<p id="msg3" class="hidden">Você clicou no Site em Vídeo!</p>
+
+<script>
+function mostrarTexto(id) {
+    document.getElementById(id).style.display = "block";
+}
+</script>
+
+</body>
+</html>

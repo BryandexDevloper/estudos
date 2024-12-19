@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Header</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        
+         
+        }
+
+        /* DIV Principal do Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Logo */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Menu de Navegação */
+        .nav {
+            display: flex;
+            gap: 20px;
+          
+            
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+           
+        }
+
+        /* Botão de Ação */
+        .cta {
+            background-color: #f90;
+            color: #333;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            width: 60%;
+           
+           
+            
+        }
+
+        .botoes {
+    display: flex;
+    flex-direction: column; /* Organiza em coluna */
+    align-items: center;    /* Centraliza horizontalmente */
+    gap: 10px;    
+              /* Espaço entre botões */
+              width: 300px;
+}
+
+
+
+.pai{
+
+    width: 640px;
+    height: 480px;
+    display: flex;
+    border:5px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    margin:50px auto 0;
+margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+    
+}
+
+
+.filho{ width: 100px;
+    height: 100px;
+    border:3px solid red
+
+   
+}
+    </style>
+</head>
+<body>
+
+<!-- Header Principal -->
+<header>
+
+    <!-- Logo -->
+    <div class="logo">Minha Logo</div>
+
+    <!-- Menu de Navegação -->
+    <div class="nav">
+        <a href="#">Início</a>
+        <a href="#">Serviços</a>
+        <a href="#">Contato</a>
+    </div>
+
+    <!-- Botão de Ação -->
+    <div class="botoes">
+        <button class="cta">Login</button>
+        <button class="cta">Registrar</button>
+    </div>
+    </header>
+
+
+<main>
+<div class="pai">
+
+<div class="filho"></div>
+<div class="filho"></div>
+<div class="filho"></div>
+<div class="filho"></div>
+
+</div>
+</main>
+
+
+
+</body>
+</html>
